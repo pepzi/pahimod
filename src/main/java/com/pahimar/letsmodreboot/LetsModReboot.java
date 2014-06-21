@@ -7,6 +7,9 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(name = "Let's Mod Reboot", modid = "letsmodreboot", version = "1.7.2-1.0")
 public class LetsModReboot {
+    @Mod.Instance("letsmodreboot")
+    public static LetsModReboot instance;
+
     @Mod.EventHandler()
     public void init(FMLInitializationEvent event) {
 
