@@ -19,3 +19,5 @@ saves
 out
 *.idea
 *.iml
+*.ipr
+*.iws
