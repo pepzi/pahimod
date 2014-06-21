@@ -12,6 +12,8 @@ gradle-app.setting
 .classpath
 .project
 bin
+logs
+saves
 
 # intellij
 out
