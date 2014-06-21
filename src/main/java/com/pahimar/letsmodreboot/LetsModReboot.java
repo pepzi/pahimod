@@ -1,12 +1,17 @@
 package com.pahimar.letsmodreboot;
 
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(name = "Let's Mod Reboot", modid = "letsmodreboot", version = "1.7.2-1.0")
 public class LetsModReboot {
+    @SidedProxy(clientSide = "com.pahimar.letsmodreboot.ClientProxy",
+            serverSide = "com.pahimar.letsmodreboot.CommonProxy")
+    public static CommonProxy proxy;
+
     @Mod.Instance("letsmodreboot")
     public static LetsModReboot instance;
 
