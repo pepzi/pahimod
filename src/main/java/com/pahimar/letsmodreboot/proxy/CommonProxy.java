@@ -1,4 +1,5 @@
 package com.pahimar.letsmodreboot.proxy;
 
-public class CommonProxy {
+public abstract class CommonProxy implements IProxy {
+
 }
