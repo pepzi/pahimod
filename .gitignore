@@ -7,14 +7,7 @@ gradle-app.setting
 /minecraft
 
 # eclipse
-.settings
-.metadata
-.classpath
-.project
-bin
-logs
-saves
-options.txt
+/eclipse
 
 # intellij
 out
