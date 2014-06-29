@@ -1,6 +1,6 @@
-package com.pahimar.letsmodreboot.utility;
+package org.pepzi.pahimod.utility;
 
-import com.pahimar.letsmodreboot.reference.Reference;
+import org.pepzi.pahimod.reference.Reference;
 import cpw.mods.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
 

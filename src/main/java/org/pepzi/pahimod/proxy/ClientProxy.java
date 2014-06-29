@@ -1,4 +1,4 @@
-package com.pahimar.letsmodreboot.proxy;
+package org.pepzi.pahimod.proxy;
 
 public class ClientProxy extends CommonProxy {
 }
