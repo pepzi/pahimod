@@ -1,5 +1,6 @@
 package org.pepzi.pahimod;
 
+import org.pepzi.pahimod.configuration.ConfigurationHandler;
 import org.pepzi.pahimod.proxy.IProxy;
 import org.pepzi.pahimod.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -17,13 +18,13 @@ public class PahiMod {
                 serverSide = Reference.MOD_SERVER_PROXY)
     public static IProxy proxy;
 
-    @Mod.EventHandler()
-    public void init(FMLInitializationEvent event) {
-
-    }
-
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+    }
+
+    @Mod.EventHandler()
+    public void init(FMLInitializationEvent event) {
 
     }
 
