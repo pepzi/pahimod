@@ -26,7 +26,7 @@ public class ConfigurationHandler {
         }
     }
 
-    public static void logConfiguration() {
+    private static void logConfiguration() {
         testValue = configuration.getBoolean("configValue", Configuration.CATEGORY_GENERAL,
                 false, "This is an example configuration value");
 

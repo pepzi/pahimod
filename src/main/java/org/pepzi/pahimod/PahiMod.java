@@ -1,6 +1,8 @@
 package org.pepzi.pahimod;
 
+import cpw.mods.fml.common.FMLCommonHandler;
 import org.pepzi.pahimod.handler.ConfigurationHandler;
+import org.pepzi.pahimod.init.ModItems;
 import org.pepzi.pahimod.proxy.IProxy;
 import org.pepzi.pahimod.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -22,7 +24,10 @@ public class PahiMod {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         LogHelper.info("Pre Initialization Complete");
+
+        ModItems.init();
     }
 
     @Mod.EventHandler()
