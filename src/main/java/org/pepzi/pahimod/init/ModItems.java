@@ -3,7 +3,9 @@ package org.pepzi.pahimod.init;
 import cpw.mods.fml.common.registry.GameRegistry;
 import org.pepzi.pahimod.item.ItemMapleLeaf;
 import org.pepzi.pahimod.item.ItemPMod;
+import org.pepzi.pahimod.reference.Reference;
 
+@GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems {
     public static final ItemPMod mapleLeaf = new ItemMapleLeaf();
 

@@ -22,7 +22,7 @@ group= "org.pepzi.pahimod" // http://maven.apache.org/guides/mini/guide-naming-c
 archivesBaseName = "PahiMod"
 
 minecraft {
-    version = "1.7.10-10.13.0.1152"
+    version = "1.7.10-10.13.0.1178"
     assetDir = "eclipse/assets"
 }
 

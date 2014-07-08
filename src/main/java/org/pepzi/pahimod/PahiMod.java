@@ -2,6 +2,7 @@ package org.pepzi.pahimod;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import org.pepzi.pahimod.handler.ConfigurationHandler;
+import org.pepzi.pahimod.init.ModBlocks;
 import org.pepzi.pahimod.init.ModItems;
 import org.pepzi.pahimod.proxy.IProxy;
 import org.pepzi.pahimod.reference.Reference;
@@ -28,6 +29,7 @@ public class PahiMod {
         LogHelper.info("Pre Initialization Complete");
 
         ModItems.init();
+        ModBlocks.init();
     }
 
     @Mod.EventHandler()
