@@ -1,6 +1,9 @@
 package org.pepzi.pahimod.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBow;
+import org.pepzi.pahimod.creativetab.CreativeTabPMod;
 import org.pepzi.pahimod.item.ItemMapleLeaf;
 import org.pepzi.pahimod.item.ItemPMod;
 import org.pepzi.pahimod.reference.Reference;

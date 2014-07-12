@@ -5,12 +5,13 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import org.pepzi.pahimod.creativetab.CreativeTabPMod;
 import org.pepzi.pahimod.reference.Reference;
 
 public class ItemPMod extends Item {
     public ItemPMod() {
         super();
-        this.setUnlocalizedName("mapleLeaf");
+        this.setCreativeTab(CreativeTabPMod.PMOD_TAB);
     }
 
     @Override

@@ -6,11 +6,13 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemStack;
+import org.pepzi.pahimod.creativetab.CreativeTabPMod;
 import org.pepzi.pahimod.reference.Reference;
 
 public class BlockPMod extends Block {
     public BlockPMod(Material material) {
         super(material);
+        this.setCreativeTab(CreativeTabPMod.PMOD_TAB);
     }
 
     public BlockPMod() {
