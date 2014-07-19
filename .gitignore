@@ -9,6 +9,8 @@ gradle-app.setting
 # eclipse
 /eclipse
 
+/run
+
 # intellij
 out
 *.idea

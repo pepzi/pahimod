@@ -4,6 +4,7 @@ import cpw.mods.fml.common.FMLCommonHandler;
 import org.pepzi.pahimod.handler.ConfigurationHandler;
 import org.pepzi.pahimod.init.ModBlocks;
 import org.pepzi.pahimod.init.ModItems;
+import org.pepzi.pahimod.init.Recipes;
 import org.pepzi.pahimod.proxy.IProxy;
 import org.pepzi.pahimod.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -34,6 +35,7 @@ public class PahiMod {
 
     @Mod.EventHandler()
     public void init(FMLInitializationEvent event) {
+        Recipes.init();
         LogHelper.info("Initialization Complete");
     }
 
